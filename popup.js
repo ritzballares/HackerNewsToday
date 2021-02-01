@@ -14,6 +14,8 @@ function fetchData() {
             let numStories = document.getElementById("numberOfStories");
             let storiesList = document.getElementById("storiesList");
 
+            storiesList.innerHTML = ""
+
             for (i = 0; i < numStories.value; i++) { 
                 let storyLink = document.createElement("a");
                 storyLink.href = sortedStoriesList[i].url;
